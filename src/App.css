@@ -2,13 +2,13 @@
   --bg-dark-gray: hsl(0, 0%, 59%);
   --bg-very-dark-gray: hsl(0, 0%, 17%);
 }
-.loading{
+.loading {
   position: absolute;
   inset: 0;
   background-color: rgba(56, 56, 56, 0.07);
 }
 
-.image-container{
+.image-container {
   width: 100%;
 }
 .wrapper {
@@ -17,7 +17,6 @@
   height: 16rem;
   background-image: url(./pattern-bg.png);
   padding: 0rem 2rem;
-
 }
 .heading {
   font-weight: 500;
@@ -26,17 +25,15 @@
   padding-block: 1.5rem;
   text-transform: capitalize;
 }
-.input-wrapper{
-
-   display: flex;
-   justify-content: center;
-
+.input-wrapper {
+  display: flex;
+  justify-content: center;
 }
 input:focus {
-   outline: none;
+  outline: none;
 }
-.input-wrapper input{
-  font-family: 'Rubik', sans-serif;
+.input-wrapper input {
+  font-family: "Rubik", sans-serif;
   padding: 1.1rem 1.3rem;
   font-size: 18px;
   flex: 1;
@@ -45,7 +42,7 @@ input:focus {
   max-width: 30rem;
 }
 
-.btn{
+.btn {
   border: none;
   background-color: rgb(12, 12, 12);
   color: white;
@@ -53,48 +50,49 @@ input:focus {
   border-radius: 0 0.7em 0.7em 0;
   transition: background-color 0.5s;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--bg-very-dark-gray);
 }
-.ip-address{
+.ip-address {
   z-index: 10;
-   background-color: white;
-   margin-top: 1.6rem;
-   text-align: center;
-   border-radius: 0.7em;
-   padding: 0.5rem;
-   max-width: 375px;
-   margin-inline: auto;
+  background-color: white;
+  margin-top: 1.6rem;
+  text-align: center;
+  border-radius: 0.7em;
+  padding: 0.5rem;
+  max-width: 375px;
+  margin-inline: auto;
 }
-.ip-address h4{
+.ip-address h4 {
   letter-spacing: 0.2em;
   font-weight: 700;
   font-size: 11px;
   text-transform: uppercase;
   color: var(--bg-dark-gray);
 }
-.ip-address h2{
+.ip-address h2 {
   line-height: 1.4;
   color: var(--bg-very-dark-gray);
   letter-spacing: 0.075em;
   font-size: 20px;
   font-weight: 500;
 }
-.ip-address div{
+.ip-address div {
   padding: 0.4rem 2rem;
 }
-.ip-address div h2{
+.ip-address div h2 {
   margin-top: 0.3rem;
-
 }
 
-.map{
-  width: 100%;
+.map-container{
+  width: 100%
+}
+.map {
+  width: 100vw;
   z-index: -1;
 }
-
 @media screen and (min-width: 847px) {
-  .ip-address{
+  .ip-address {
     margin-top: 2.5rem;
     text-align: left;
     display: flex;
@@ -102,29 +100,27 @@ input:focus {
     max-width: 70rem;
     padding: 2.5rem 1rem;
   }
-  .ip-address div{
+  .ip-address div {
     position: relative;
   }
-  .ip-address div::before{
-    content: '';
+  .ip-address div::before {
+    content: "";
     position: absolute;
     left: 0;
     height: 65%;
     margin-top: 8px;
     width: 1px;
-    background:hsl(0, 0%, 59%);
+    background: hsl(0, 0%, 59%);
     opacity: 0.6;
-
   }
-  .ip-address:first-child::before{
+  .ip-address:first-child::before {
     content: none;
   }
-  .ip-address div h2{
+  .ip-address div h2 {
     margin-top: 1rem;
     font-size: 24px;
-
   }
-.ip-address div h4{
-  font-size: 14px;
-}
+  .ip-address div h4 {
+    font-size: 14px;
+  }
 }
