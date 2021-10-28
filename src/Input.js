@@ -1,15 +1,12 @@
-import { useEffect } from "react";
+import { useEffect } from "react/cjs/react.development";
 import svgImage from "./icon-arrow.svg";
 
 const Input = ({ setIpAddress, details, value, _setValue }) => {
   useEffect(() => {
-    function setValue() {
-      if(!details) return _setValue('')
+    if (details.ip) {
       _setValue(details.ip);
-    }
-    setValue();
+    } else _setValue("");
   }, []);
-
   const inputHandler = (e) => {
     e.preventDefault();
     _setValue(e.target.value);
